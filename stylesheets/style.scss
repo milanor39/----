@@ -1,0 +1,100 @@
+
+.indexbg{
+    background-image: url("../images/bg-index.jpg");
+}
+.loginbg{
+    background-image: url("../images/bg-login.jpg");
+}
+.shopbg{
+    background-image: url("../images/bg-shop.jpg");
+}
+.cartbg{
+    background-image: url("../images/bg-cart.jpg");
+}
+.bgset{
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    background-image: url("../images/logo.png");
+    width: 179px; 
+    height: 68px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.searchbar{
+    background-color: RGB(255,255,255,0.5);
+}
+.travelinfo{
+    .infolist{
+        height: 295px;
+        overflow-y: scroll;
+    }
+}
+.cardstyle>{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    :hover{
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+.mobilesearch{
+    display: none;
+}
+.otherlogin{
+    width: 280px;
+}
+.cart-list{
+    width: 400px;
+    border: none;
+}
+.cart-img{
+    width: 150px;
+}
+.table{
+    tbody{
+        tr{
+            td{
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.shop{
+    position: relative;
+}
+.price{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+@media (max-width: 1024px) {
+    .travelinfo{
+        height: 226px;
+        .infolist{
+            height: 200px;
+        }
+    }
+    .introduce{
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .pcsearch{
+        display: none;
+    }
+    .mobilesearch{
+        display: block;
+    }
+    .aboutus{
+        display: none;
+    }
+    .introduce{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .travelinfo{
+        display: none;
+    }
+}

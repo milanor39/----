@@ -1,0 +1,55 @@
+// Custom.scss
+@import "style.scss";
+
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "../bootstrap/_functions.scss";
+@import "helpers/_variables.scss";
+@import "../bootstrap/_mixins.scss";
+@import "../bootstrap/_utilities.scss";
+
+// Layout & components
+@import "../bootstrap/_root.scss";
+@import "../bootstrap/_reboot.scss";
+@import "../bootstrap/_type.scss";
+@import "../bootstrap/_images.scss";
+@import "../bootstrap/_containers.scss";
+@import "../bootstrap/_grid.scss";
+@import "../bootstrap/_tables.scss";
+@import "../bootstrap/_forms.scss";
+@import "../bootstrap/_buttons.scss";
+@import "../bootstrap/_transitions.scss";
+@import "../bootstrap/_dropdown.scss";
+@import "../bootstrap/_button-group.scss";
+@import "../bootstrap/_nav.scss";
+@import "../bootstrap/_navbar.scss";
+@import "../bootstrap/_card.scss";
+@import "../bootstrap/_accordion.scss";
+@import "../bootstrap/_breadcrumb.scss";
+@import "../bootstrap/_pagination.scss";
+@import "../bootstrap/_badge.scss";
+@import "../bootstrap/_progress.scss";
+@import "../bootstrap/_list-group.scss";
+@import "../bootstrap/_close.scss";
+@import "../bootstrap/_toasts.scss";
+@import "../bootstrap/_modal.scss";
+@import "../bootstrap/_tooltip.scss";
+@import "../bootstrap/_popover.scss";
+@import "../bootstrap/_carousel.scss";
+@import "../bootstrap/_spinners.scss";
+@import "../bootstrap/_offcanvas.scss";
+@import "../bootstrap/_placeholders.scss";
+
+// Helpers
+@import "../bootstrap/_helpers.scss";
+
+// Utilities
+@import "../bootstrap/utilities/_api.scss";
+// scss-docs-end import-stack

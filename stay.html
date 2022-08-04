@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂房 - 白波旅遊</title>
+    <meta name="description" content="專營日本觀光的旅行社電商網站，提供有關日本旅遊的自由行、團體行程、計票、住宿，以及當地體驗行程票券和交通的等相關服務">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="images/Travel.ico">
+</head>
+<body>
+    <!--header-->
+    <div class="shopbg bgset mb-5">
+        <div class="container d-flex justify-content-between">
+            <ul class="sns d-flex py-2 mb-0 list-unstyled">
+                <li class="me-2"><a class="d-block link-light text-decoration-none" href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                <li class="me-2"><a class="d-block link-light text-decoration-none" href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                <li><a class="d-block link-light text-decoration-none" href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+            </ul>
+            <ul class="sns d-flex py-2 mb-0 list-unstyled">
+                <li class="me-3"><a class="d-block link-light text-decoration-none" href="login.html"><i class="fas fa-user fa-sm"></i>會員中心</a></li>
+                <li class="me-3"><a class="d-block link-light text-decoration-none" href="cart1.html"><i class="fas fa-shopping-cart fa-sm"></i>購物車</a></li>
+            </ul>
+        </div>
+        <!--navbar-->
+        <div class="bg-siranami">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0 m-0 bg-siranami">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">
+                        <h1 class="p-0 m-0">白波旅遊</h1>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav fs-5 text-center mx-auto d-flex">
+                          <li class="nav-item text-center mx-1">
+                            <a class="nav-link" href="group.html"><i class="fas fa-users"></i><br>團體旅行</a>
+                          </li>
+                          <li class="nav-item text-center mx-3">
+                            <a class="nav-link" href="freetravel.html"><i class="fas fa-suitcase-rolling"></i><br>自由行</a>
+                          </li>
+                          <li class="nav-item text-center mx-3">
+                            <a class="nav-link" href="airtickets.html"><i class="fas fa-plane"></i><br>機票</a>
+                          </li>
+                          <li class="nav-item text-center mx-3">
+                            <a class="nav-link" href="stay.html"><i class="fas fa-hotel"></i><br>訂房</a>
+                          </li>
+                          <li class="nav-item text-center mx-3">
+                            <a class="nav-link" href="activity.html"><i class="fas fa-hiking"></i><br>體驗</a>
+                          </li>
+                          <li class="nav-item text-center mx-3">
+                            <a class="nav-link" href="news.html"><i class="fas fa-map-marked-alt"></i><br>旅遊資訊</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <!--banner-->
+        <div class="p-3 my-3 text-white text-center">
+            <h2 class="display-2 pt-3 fw-bold">日本，精彩跟著來</h2>
+            <h3 class="display-7">分享您生命中最美好的日本之旅</h3>
+        </div>
+    </div>
+    <div class="container">
+        <!--breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="link-siranami" href="#">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">訂房</li>
+            </ol>
+        </nav>
+        <!--search-->
+        <h3 class=" border-bottom pb-2"><i class="fas fa-search-plus"></i>旅館查詢</h3>
+        <div class="tab-pane fade show my-3 ps-2 border active" id="oneway" role="tabpanel" aria-labelledby="oneway-tab">
+            <div class="row g-2 px-2 pt-3">
+              <div class="col mb-3">
+                  <div class="input-group">
+                      <label class="input-group-text" for="destination">目的地</label>
+                      <select class="form-select" id="destination" required>
+                          <option label="" value=""></option>
+                          <optgroup label="關東">
+                            <option value="Tokyo">東京</option>
+                            <option value="Ibaraki">茨城</option>
+                            <option value="Saitama">埼玉</option>
+                          </optgroup>
+                          <optgroup label="關西">
+                            <option value="Oosaka">大阪</option>
+                            <option value="Kyoto">京都</option>
+                            <option value="Kobe">神戶</option>
+                          </optgroup>
+                      </select>
+                  </div>
+              </div>
+            </div>
+            <div class="row g-2 px-2">
+                <div class="col-md-6 mb-3">
+                  <div class="input-group">
+                      <label class="input-group-text" for="departuredate">入住日期</label>
+                      <input class="border border-outline-secondary" type="date" name="date" id="departuredate" >
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="input-group">
+                    <label class="input-group-text" for="departuredate">退房日期</label>
+                    <input class="border border-outline-secondary" type="date" name="date" id="departuredate" >
+                  </div>
+                </div>
+              </div>
+            <div class="row g-2 px-2">
+              <div class="col-md-6 mb-3">
+                <div class="input-group">
+                    <label class="input-group-text" for="people">成人</label>
+                    <input type="number" name="num" id="people" value="1" min="2" max="10">
+                    <label class="input-group-text" for="people">孩童</label>
+                    <input type="number" name="num" id="people" value="0" min="1" max="10">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3 text-center">
+              <input class="btn btn-outline-secondary" type="reset" value="重設">
+              <input class="btn btn-siranami text-light" type="submit" value="查詢">
+            </div>
+          </div>
+    </div>
+    <!--popular-route-->
+    <div class=" mb-2 container p-3">
+      <h3 class=" border-bottom pb-2"><i class="fab fa-hotjar"></i>熱門目的地</h3>
+      <ul class="row ps-0 list-unstyled">
+        <li class="col-lg-3 col-md-6 my-2">
+            <div class="card cardstyle">
+              <a class="text-decoration-none" href="#">
+                <img class="card-img-top" src="images/s-東京.jpg" alt="">
+                <div class="card-body text-center p-3">
+                  <h5 class="card-title m-0 text-dark fw-bold">東京</h5>
+                </div>
+              </a>
+            </div>
+        </li>
+        <li class="col-lg-3 col-md-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/s-大阪.jpg" alt="">
+              <div class="card-body text-center p-3">
+                <h5 class="card-title m-0 text-dark fw-bold">大阪</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/s-福岡.jpg" alt="">
+              <div class="card-body text-center p-3">
+                <h5 class="card-title m-0 text-dark fw-bold">福岡</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/s-北海道.jpg" alt="">
+              <div class="card-body text-center p-3">
+                <h5 class="card-title m-0 text-dark fw-bold">北海道</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--house-->
+    <div class=" mb-2 container p-3">
+      <h3 class=" border-bottom pb-2"><i class="fas fa-hotel"></i>住宿類型</h3>
+      <ul class="row ps-0 list-unstyled">
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+            <div class="card cardstyle">
+              <a class="text-decoration-none" href="#">
+                <img class="card-img-top" src="images/飯店.jpg" alt="飯店">
+                <div class="card-footer text-center bg-transparent border-0">
+                  <h5 class="text-dark m-0">飯店</h5>
+                </div>
+              </a>
+            </div>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/公寓.jpg" alt="公寓">
+              <div class="card-footer text-center bg-transparent border-0">
+                <h5 class="text-dark m-0">公寓</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/渡假村.jpg" alt="渡假村">
+              <div class="card-footer text-center bg-transparent border-0">
+                <h5 class="text-dark m-0">渡假村</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/Villa.jpg" alt="Villa">
+              <div class="card-footer text-center bg-transparent border-0">
+                <h5 class="text-dark m-0">Villa</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/小木屋.jpg" alt="小木屋">
+              <div class="card-footer text-center bg-transparent border-0">
+                <h5 class="text-dark m-0">小木屋</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6 my-2">
+          <div class="card cardstyle">
+            <a class="text-decoration-none" href="#">
+              <img class="card-img-top" src="images/民宿.jpg" alt="民宿">
+              <div class="card-footer text-center bg-transparent border-0">
+                <h5 class="text-dark m-0">民宿</h5>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--area-->
+    <div class="container p-3">
+      <h3 class="border-bottom pb-2"><i class="fas fa-map-marked-alt"></i>地區分類</h3>
+      <ul class="row list-unstyled">
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-關東.jpg" class="card-img" alt="關東">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">關東</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-關西.jpg" class="card-img" alt="關西">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">關西</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-中部.jpg" class="card-img" alt="中部">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">中部</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-山陰.jpg" class="card-img" alt="山陰/山陽">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">山陰/山陽</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="row list-unstyled">
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-四國.jpg" class="card-img" alt="四國">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">四國</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-東北.jpg" class="card-img" alt="東北">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">東北</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-北海道1.jpg" class="card-img" alt="北海道">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">北海道</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 mt-3">
+          <div class="card cardstyle">
+            <a href="#" class="text-decoration-none">
+              <img src="images/s-九州.jpg" class="card-img" alt="九州/沖繩">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white fw-bold">九州/沖繩</h4>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--footer-->
+    <footer class="bg-siranami mt-5 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img class="py-3" src="images/logo.png" alt="logo">
+            <ul class="list-unstyled text-white">
+              <li>105台北市松山區慶城街28號</li>
+              <li>(02)2713-8000</li>
+              <li>營業時間：週一～週五（9:00-17:30）</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 text-light aboutus">
+            <h5 class="pt-4 border-bottom">關於白波旅遊</h5>
+            <ul class="list-unstyled contactus">
+              <li><a class="mx-2 text-decoration-none link-light" href="#">關於我們</a></li>
+              <li><a class="mx-2 text-decoration-none link-light" href="#">網站地圖</a></li>
+              <li><a class="mx-2 text-decoration-none link-light" href="#">版權所有</a></li>
+              <li><a class="mx-2 text-decoration-none link-light" href="#">聯絡我們</a></li>
+              <li><a class="mx-2 text-decoration-none link-light" href="#">意見與建議</a></li>
+            </ul>
+          </div>
+          <forum class="col-lg-4 col-md-6 text-light">
+            <h5 class="pt-4 border-bottom">獲得最新日本旅遊資訊</h5>
+            <p>訂閱白波旅遊的電子報，以獲得最新的日本旅遊情報和特價優惠!</p>
+            <div class="input-group">
+              <input class="form-control" type="email" name="news" id="subscribe" placeholder="請輸入E-mail">
+              <button type="submit" class="btn btn-secondary">立即訂閱</button>
+            </div>
+          </forum>
+          <p class="text-center text-white m-0"><small>&copy; 2021 SIRANAMI TOUR</small></p>
+        </div>
+      </div>
+    </footer>
+    <!--bs5-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
